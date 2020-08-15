@@ -2,21 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ConsulServiceStudent.Models;
-using Microsoft.AspNetCore.Http;
+using ConsulServiceTeacher.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Formatters;
 
-namespace ConsulServiceStudent.Controllers
+namespace ConsulServiceTeacher.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class DefaultController : ControllerBase
     {
-        List<Student> list = new List<Student>() {
-        new Student(){ ID = "001", StudentName = "学生1", StudentAge = 16 },
-        new Student(){ ID = "002", StudentName = "学生2", StudentAge = 18 },
-        new Student(){ ID = "003", StudentName = "学生3", StudentAge = 17 }
+        List<Teacher> list = new List<Teacher>() {
+        new Teacher(){ ID = "004", TeacherName = "老师1", TeacherAge = 36 },
+        new Teacher(){ ID = "005", TeacherName = "老师2", TeacherAge = 38 },
+        new Teacher(){ ID = "006", TeacherName = "老师3", TeacherAge = 37 }
         };
 
         /// <summary>
@@ -30,7 +28,7 @@ namespace ConsulServiceStudent.Controllers
         }
 
         [HttpGet]
-        public List<Student> GetList()
+        public List<Teacher> GetList()
         {
             Console.WriteLine(DateTime.Now.ToString());
 
@@ -38,11 +36,11 @@ namespace ConsulServiceStudent.Controllers
         }
 
         [HttpGet]
-        public Student GetModel(string id)
+        public Teacher GetModel(string id)
         {
             Console.WriteLine(DateTime.Now.ToString());
 
-            return list.Find(t=>t.ID==id);
+            return list.Find(t => t.ID == id);
         }
     }
 }
