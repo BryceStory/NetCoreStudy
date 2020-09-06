@@ -27,13 +27,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConSulCustomer", "ConSulCus
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Polly", "Polly", "{4F4093C2-D383-42C1-8B6A-2C237BBF1172}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDiscovery", "ServiceDiscovery\ServiceDiscovery.csproj", "{388F923A-41E4-4888-94D0-48B4D10C2C26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceDiscovery", "ServiceDiscovery\ServiceDiscovery.csproj", "{388F923A-41E4-4888-94D0-48B4D10C2C26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceCustomer", "ServiceCustomer\ServiceCustomer.csproj", "{8C1A02C7-0F48-4D0C-BEA8-0EE81E7A260E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceCustomer", "ServiceCustomer\ServiceCustomer.csproj", "{8C1A02C7-0F48-4D0C-BEA8-0EE81E7A260E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceCustomerWithPolly", "ServiceCustomerWithPolly\ServiceCustomerWithPolly.csproj", "{CB59113B-9BC5-4C5C-A96E-B69B955C41EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceCustomerWithPolly", "ServiceCustomerWithPolly\ServiceCustomerWithPolly.csproj", "{CB59113B-9BC5-4C5C-A96E-B69B955C41EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PollyDemo", "PollyDemo\PollyDemo.csproj", "{A827986D-726F-45AA-BF4D-E583CDFA8012}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PollyDemo", "PollyDemo\PollyDemo.csproj", "{A827986D-726F-45AA-BF4D-E583CDFA8012}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionDemo", "ReflectionDemo\ReflectionDemo.csproj", "{AAE9C518-77EE-4B68-B562-0DB42E253484}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +99,10 @@ Global
 		{A827986D-726F-45AA-BF4D-E583CDFA8012}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A827986D-726F-45AA-BF4D-E583CDFA8012}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A827986D-726F-45AA-BF4D-E583CDFA8012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAE9C518-77EE-4B68-B562-0DB42E253484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE9C518-77EE-4B68-B562-0DB42E253484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE9C518-77EE-4B68-B562-0DB42E253484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE9C518-77EE-4B68-B562-0DB42E253484}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
