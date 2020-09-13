@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 
 namespace ReflectionDemo
@@ -7,23 +9,36 @@ namespace ReflectionDemo
     {
         static void Main(string[] args)
         {
-            ReflectionTest();
+            var a = ReflectionTest<TargetClass>();
 
             Console.ReadLine();
         }
 
-        public static void ReflectionTest()
+        public static PropertyInfo[] ReflectionTest<T>()
         {
-             TargetClass targetClass = new TargetClass();
+            T model = Activator.CreateInstance<T>();
 
+            typeof(T).GetMethod("DoSave").Invoke(model,new object[1] { 123});
+            
+            //var Constructors = typeof(T).GetConstructors();
 
-            PropertyInfo[] infos= targetClass.GetType().GetProperties();
-            foreach (var item in infos)
-            {
-                Console.WriteLine($"item name :{item.GetMethod}");
-            }
+            //Console.WriteLine($"Constructors:{Constructors.Count().ToString()}");
 
-           // Console.WriteLine($"{infos.GetFields().ToString()}   full name : {infos.FullName}");
+            //foreach (var item in typeof(T).GetMethods())
+            //{
+            //    Console.WriteLine($"GetMethods:{item.Name}");
+            //    Console.WriteLine($"GetMethods:{item.GetParameters()}");
+
+            //    foreach (var k in item.GetParameters())
+            //    {
+            //        Console.WriteLine($"GetMethod:{item.Name} --GetParameters:ParameterType={k.ParameterType},{k.Name}");
+            //    }
+            //}
+
+            PropertyInfo[] propertyInfos = typeof(T).GetProperties();
+
+            return propertyInfos;
+
         }
     }
 }
