@@ -7,8 +7,16 @@ namespace ReflectionDemo
     public class TargetClass
     {
         public int Id { get; set; }
+        //属性
+        public string Name { get; set; }   //有get set访问器的叫属性  没有的叫字段
+        //字段
+        public string Desc;
+        public string Desc2;
 
-        public string Name { get; set; }
+        public void GenricClass<K, S>(K t, S s)
+        {
+            Console.WriteLine($"GenricClass K:{typeof(K).ToString()},S  {typeof(S).ToString()} ");
+        }
 
         public void GetSometing()
         {
@@ -19,9 +27,9 @@ namespace ReflectionDemo
             Console.WriteLine($"Do name:{name}");
         }
 
-        public void Do(string key ,long id)
+        public void Do(string key, long id)
         {
-            Console.WriteLine($"Do name:{key}");
+            Console.WriteLine($"Do name:string {key}  long :{id}");
         }
 
         public void Do(int age)
@@ -32,6 +40,16 @@ namespace ReflectionDemo
         public void DoSave(int age)
         {
             Console.WriteLine($"DoSave age:{age}");
+        }
+
+        public static void StaticFun(int age)
+        {
+            Console.WriteLine($"static StaticFun age:{age}");
+        }
+
+        private void PrivateFun(int age)
+        {
+            Console.WriteLine($"static StaticFun age:{age}");
         }
     }
 }
