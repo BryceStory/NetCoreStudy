@@ -15,7 +15,7 @@ namespace LambdaDemo
            // () => { Console.WriteLine($"{a}dada{name}"); };
 
 
-            Console.WriteLine();
+            Console.ReadLine();
         }
     }
 }
