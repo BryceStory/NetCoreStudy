@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/DelegateDemo/bin/Debug/netcoreapp3.1/DelegateDemo.dll",
+            "program": "${workspaceFolder}/LambdaDemo/bin/Debug/netcoreapp3.1/LambdaDemo.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/DelegateDemo",
+            "cwd": "${workspaceFolder}/LambdaDemo",
             "console": "internalConsole",
             "stopAtEntry": false
         },
