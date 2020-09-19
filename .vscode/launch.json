@@ -13,7 +13,7 @@
             "args": [],
             "cwd": "${workspaceFolder}/LambdaDemo",
             "console": "internalConsole",
-            "stopAtEntry": false
+            "stopAtEntry": true
         },
         {
             "name": ".NET Core Attach",
