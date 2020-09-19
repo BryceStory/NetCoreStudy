@@ -29,7 +29,7 @@ new Student(){Id=32,Name="dd",Gender=false },
 
             // var res = stuLst.Where<Student>(t => t.Gender == true);
 
-            var result = stuLst.BWhere(t => { t.Id > 23});
+            // var result = stuLst.BWhere(t => { t.Id > 23});
 
             Console.ReadLine();
         }

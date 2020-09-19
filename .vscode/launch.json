@@ -3,15 +3,14 @@
     // 悬停以查看现有属性的描述。
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [
-        {
+    "configurations": [{
             "name": ".NET Core Launch (console)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/LambdaDemo/bin/Debug/netcoreapp3.1/LambdaDemo.dll",
+            "program": "${workspaceFolder}/IOSerialize/bin/Debug/netcoreapp3.1/IOSerialize.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/LambdaDemo",
+            "cwd": "${workspaceFolder}/IOSerialize",
             "console": "internalConsole",
             "stopAtEntry": true
         },
