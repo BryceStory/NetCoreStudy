@@ -17,7 +17,6 @@ namespace DelegateDemo
             }
 
 
-
             Console.ReadLine();
         }
     }
