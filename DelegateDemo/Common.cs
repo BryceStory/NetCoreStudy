@@ -20,7 +20,7 @@ namespace DelegateDemo
 
         public static void SayHiAmerican(string name)
         {
-            Console.WriteLine($"{name},What's up");
+            Console.WriteLine($"{name},What's up !");
         }
 
         public static void SayHiJapan(string name)
