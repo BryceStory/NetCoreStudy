@@ -39,15 +39,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReflectionDemo", "Reflectio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AttributeDemo", "AttributeDemo\AttributeDemo.csproj", "{C40DDEBA-D590-47B9-ACAF-EBE2C8147806}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateDemo", "DelegateDemo\DelegateDemo.csproj", "{B1FF859D-0A81-4757-80DA-17766B62BDC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateDemo", "DelegateDemo\DelegateDemo.csproj", "{B1FF859D-0A81-4757-80DA-17766B62BDC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaDemo", "LambdaDemo\LambdaDemo.csproj", "{3BF69120-D4E6-4A09-A757-EBE08612AB5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaDemo", "LambdaDemo\LambdaDemo.csproj", "{3BF69120-D4E6-4A09-A757-EBE08612AB5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionDemo", "ExpressionDemo\ExpressionDemo.csproj", "{F4834994-33EA-437F-8F6E-2995C36FA30D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressionDemo", "ExpressionDemo\ExpressionDemo.csproj", "{F4834994-33EA-437F-8F6E-2995C36FA30D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOSerialize", "IOSerialize\IOSerialize.csproj", "{CDEF28C1-FDF1-4195-BAE2-73CF03847326}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IOSerialize", "IOSerialize\IOSerialize.csproj", "{CDEF28C1-FDF1-4195-BAE2-73CF03847326}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JiaMiJieMi", "JiaMiJieMi\JiaMiJieMi.csproj", "{F9218BCD-DB07-4F39-90CD-F653A5A463C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JiaMiJieMi", "JiaMiJieMi\JiaMiJieMi.csproj", "{F9218BCD-DB07-4F39-90CD-F653A5A463C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMvc", "WebMvc\WebMvc.csproj", "{8F1BB88A-7EAD-4448-AECF-EB6472837211}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -139,6 +141,10 @@ Global
 		{F9218BCD-DB07-4F39-90CD-F653A5A463C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9218BCD-DB07-4F39-90CD-F653A5A463C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9218BCD-DB07-4F39-90CD-F653A5A463C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F1BB88A-7EAD-4448-AECF-EB6472837211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F1BB88A-7EAD-4448-AECF-EB6472837211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F1BB88A-7EAD-4448-AECF-EB6472837211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F1BB88A-7EAD-4448-AECF-EB6472837211}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

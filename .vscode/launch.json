@@ -8,9 +8,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/IOSerialize/bin/Debug/netcoreapp3.1/IOSerialize.dll",
+            "program": "${workspaceFolder}/JiaMiJieMi/bin/Debug/netcoreapp3.1/JiaMiJieMi.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/IOSerialize",
+            "cwd": "${workspaceFolder}/JiaMiJieMi",
             "console": "internalConsole",
             "stopAtEntry": true
         },
