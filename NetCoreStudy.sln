@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IOSerialize", "IOSerialize\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JiaMiJieMi", "JiaMiJieMi\JiaMiJieMi.csproj", "{F9218BCD-DB07-4F39-90CD-F653A5A463C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMvc", "WebMvc\WebMvc.csproj", "{8F1BB88A-7EAD-4448-AECF-EB6472837211}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMvc", "WebMvc\WebMvc.csproj", "{8F1BB88A-7EAD-4448-AECF-EB6472837211}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisConsole", "RedisConsole\RedisConsole.csproj", "{3A6CBD9B-7E66-46BF-B068-05C1BE6150D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -145,6 +147,10 @@ Global
 		{8F1BB88A-7EAD-4448-AECF-EB6472837211}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F1BB88A-7EAD-4448-AECF-EB6472837211}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F1BB88A-7EAD-4448-AECF-EB6472837211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A6CBD9B-7E66-46BF-B068-05C1BE6150D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A6CBD9B-7E66-46BF-B068-05C1BE6150D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A6CBD9B-7E66-46BF-B068-05C1BE6150D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A6CBD9B-7E66-46BF-B068-05C1BE6150D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
