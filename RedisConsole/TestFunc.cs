@@ -72,5 +72,60 @@ namespace RedisConsole
             //service.Dispose();
         }
 
+
+        public static void HashTest()
+        {
+            var b = new Studend() { StudendId = 100, Name = "bryce", Remark = "sec" };
+
+            var a = new RedisCacheImp();
+
+            //var c = a.SetHashFieldCache<Studend>(typeof(Studend).ToString(), "First", b);
+
+            //var d = a.GetHashFieldCache<Studend>(typeof(Studend).ToString(), "First");
+
+            //Console.WriteLine(d);
+
+            //a.SetHashFieldCache<Studend>("Studend", "A", new Studend() { StudendId = 100, Name = "bryce", Remark = "sec" });
+            //a.SetHashFieldCache<Studend>("Studend", "B", new Studend() { StudendId = 100, Name = "bryce", Remark = "sec" });
+
+            //var d = a.GetHashFieldCache<Studend>("Studend", "B");
+
+            //a.cache.HashSet("A1","id","123456");
+            //a.cache.HashSet("A1", "name", "cc");
+            //a.cache.HashSet("A1", "remark", "test");
+
+            //var d = a.cache.HashGetAll("Studend");
+            //a.cache.hash
+            //a.cache.HashSet("Ac","cc","11");
+            //a.cache.HashSet("Ac", "cc", "22");
+            //a.cache.HashSet("Ac", "cc", "33");
+            //a.cache.HashSet("Ad",new StackExchange.Redis.HashEntry );
+
+            //a.cache.SetAdd("A", "sda");
+            //a.cache.SetAdd("A", "2");
+            //a.cache.SetAdd("A", "2");
+            //a.cache.set("A", "3");
+            a.cache.ListRightPush("C", "321");
+            a.cache.ListRightPush("C", "22");
+            a.cache.ListRightPush("C", "123");
+
+            a.cache.ListTrim("C",1,2);
+            var a1 = a.cache.ListRightPop("C");
+
+
+
+
+            //Console.WriteLine(d);
+
+        }
+
+        public class Studend
+        {
+            public int StudendId { get; set; }
+
+            public string Name { get; set; }
+
+            public string Remark { get; set; }
+        }
     }
 }

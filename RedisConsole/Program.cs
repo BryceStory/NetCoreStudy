@@ -15,7 +15,7 @@ namespace RedisConsole
             // Console.WriteLine(TestFunc.GetSomething());
             //new RedisCacheImp().AppendString();
 
-            TestFunc.MiaoShao();
+            TestFunc.HashTest();
 
             Console.ReadLine();
         }

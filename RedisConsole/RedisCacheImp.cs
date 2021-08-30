@@ -10,7 +10,7 @@ namespace RedisConsole
 {
     public class RedisCacheImp : ICache,IDisposable
     {
-        private IDatabase cache;
+        public IDatabase cache;
         private ConnectionMultiplexer connection;
 
         public RedisCacheImp()
@@ -35,6 +35,7 @@ namespace RedisConsole
                 if (expireTime == null)
                 {
                     return cache.StringSet(key, strValue);
+                    //cache.HashSet
                 }
                 else
                 {
